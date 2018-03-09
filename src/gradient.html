@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>重复线性渐变</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: -webkit-linear-gradient(top, gray,white);
+        }
+        #repeat{
+            width: 200px;
+            height: 200px;
+            background-image: repeating-linear-gradient(
+                    45deg,/*旋转角度*/
+                    yellow,
+                    yellow 10px,
+                    red 10px,
+                    red 20px
+            );
+        }
+        #circle{
+            width: 200px;
+            height: 200px;
+            background: repeating-radial-gradient(
+                    circle at 100px 100px,/*circle中心点所在的位置*/
+                    pink,
+                    #fff 20px
+            );
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<div id="repeat"></div>
+<div id="circle"></div>
+</body>
+</html>
